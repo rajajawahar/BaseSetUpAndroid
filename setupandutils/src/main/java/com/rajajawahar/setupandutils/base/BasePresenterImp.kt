@@ -4,7 +4,6 @@ abstract class BasePresenterImp<V : BaseView> : BasePresenter<V> {
 
     protected var view: V? = null
 
-
     init {
 
     }
