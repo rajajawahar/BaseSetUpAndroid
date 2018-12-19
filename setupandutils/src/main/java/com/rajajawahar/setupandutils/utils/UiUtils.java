@@ -7,28 +7,15 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.rajajawahar.basicsetup.R;
+import com.rajajawahar.setupandutils.R;
 
 
 public class UiUtils {
 
     //----------------------------------- Touch listener ---------------------------------------//
-
-    public static final View.OnTouchListener onTouchListener = (view, event) -> {
-        view.getParent().requestDisallowInterceptTouchEvent(true);
-        switch (event.getAction() & MotionEvent.ACTION_MASK) {
-            case MotionEvent.ACTION_UP:
-                view.getParent().requestDisallowInterceptTouchEvent(false);
-                break;
-        }
-        return false;
-    };
-
-    //----------------------------------- SnackBar and Toast  ---------------------------------------//
 
     public static void showSnackBar(View view, String message, int length) {
         Snackbar snackbar = Snackbar.make(view, message, length);

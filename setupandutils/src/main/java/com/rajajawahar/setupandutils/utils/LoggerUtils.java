@@ -1,7 +1,7 @@
 package com.rajajawahar.setupandutils.utils;
 
 import android.util.Log;
-import com.rajajawahar.basicsetup.BuildConfig;
+import com.rajajawahar.setupandutils.BuildConfig;
 
 public class LoggerUtils {
     private static final String LOG_PREFIX = "mwb_";
